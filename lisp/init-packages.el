@@ -19,6 +19,7 @@
 		;;counsel
 		;;smartparens
                 ;; --- Major Mode ---
+		;;org-mode 内置
 		web-mode
 		evil
 		evil-leader
@@ -26,18 +27,17 @@
 		window-numbering
 		evil-nerd-commenter
 		neotree
-		;;magit
+		magit
 		evil-magit
 		;;php-mode
 		;;js2-mode
 		;; --- Minor Mode ---
-		;;hs-minor-mode
+		;;hs-minor-mode 内置
 		;;nodejs-repl
 		;;exec-path-from-shell
 		;; --- Themes ---
 		;;monokai-theme
 		;; solarized-theme
-		;;evil
 		) "Default packages")
 
  (setq package-selected-packages my/packages)
