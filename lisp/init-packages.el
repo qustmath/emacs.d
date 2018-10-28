@@ -31,6 +31,7 @@
 		evil-magit
 		;;php-mode
 		;;js2-mode
+
 		;; --- Minor Mode ---
 		;;hs-minor-mode 内置
 		;;nodejs-repl
