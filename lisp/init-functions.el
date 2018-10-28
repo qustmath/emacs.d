@@ -23,4 +23,11 @@
     (global-set-key "\C-xd" 'insert-current-datetime)
 
 
+(evil-leader/set-key
+  "iD" 'insert-current-date
+  "id" 'insert-current-datetime
+  "it" 'insert-current-time
+)
+
+
 (provide 'init-functions)

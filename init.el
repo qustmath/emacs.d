@@ -26,6 +26,12 @@
 ;;载入evil-mode设置
 (require 'init-evil-mode)
 
+;;载入evil-magit-mode设置
+(require 'init-evil-magit-mode)
+
+;;载入evil-nerd-commenter-mode设置
+(require 'init-evil-nerd-commenter-mode)
+
 ;;载入neotree设置
 (require 'init-neotree)
 
