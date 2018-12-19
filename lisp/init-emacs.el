@@ -39,6 +39,8 @@
 ;;关闭 Emacs 中的警告音
 (setq ring-bell-function 'ignore)
 
+
+;;;; Windows Set START
 ;;中英文使用不同字体
 ;(defun set-font (english chinese english-size chinese-size)
 ;  (set-face-attribute 'default nil :font
@@ -47,6 +49,15 @@
 ;    (set-fontset-font (frame-parameter nil 'font) charset
 ;                      (font-spec :family chinese :size chinese-size))))
 ;(set-font   "Source Code Pro" "微软雅黑" 18 16)
+;; 设置垃圾回收，在Windows下，emacs25版本会频繁出发垃圾回收，所以需要设置 
+;(when (eq system-type 'windows-nt) 
+;      (setq gc-cons-threshold (* 512 1024 1024)) 
+;      (setq gc-cons-percentage 0.5) 
+;      (run-with-idle-timer 5 t #'garbage-collect) 
+      ;; 显示垃圾回收信息，这个可以作为调试用
+      ;; (setq garbage-collection-messages t)
+;)
+;;;; Windows Set END
 
 ;;编码设置
 ;;Default coding system (for new files)      默认buffer编码是utf-8,(写文件)
